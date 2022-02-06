@@ -1,0 +1,13 @@
+/* 예제 6-12 public/global.css에 정의한 전역 CSS 규칙들 */
+
+body {
+	font-family: sans-serif;
+}
+
+button {
+	border: solid lightgray 1px;
+	border-radius: 4px;
+	font-size: 18px;
+	margin-right: 5px;
+	padding: 4px;
+}
