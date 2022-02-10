@@ -1,0 +1,58 @@
+<!-- 예제 9-5 src/Shop.svelte 파일에 정의한 Shop 컴포넌트 -->
+
+<script>
+  import items from './items';
+  import {cartStore} from './stores';
+
+  function changeQuantity(event, item) {
+    const newQuantity = Number(event.target.value);
+    cartStore.update(items => {
+      // 새로운 수량이 0이 아니고 기존 수량이 0이라면 ...
+      if (newQuantity && !item.quantity) {
+        items.push(item);
+      // 새로운 수량이 0이고 기존 수량이 0이 아니라면 ...
+      } else if (newQuantity === 0 && item.quantity) {
+        const {description} = item;
+        items = items.filter(i => i.description !== description);
+      }
+
+      item.quantity = newQuantity;
+
+      return items;
+    });
+  }
+</script>
+
+<h1>Shop</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    {#each items as item}
+      <tr>
+        <td>{item.description}</td>
+        <td>${item.price.toFixed(2)}</td>
+        <td>
+          <input
+            type="number"
+            min="0"
+            on:input={e => changeQuantity(e, item)}
+            value={item.quantity}
+          >
+        </td>
+      </tr>
+    {/each}
+  </tbody>
+</table>
+
+<style>
+  input {
+    width: 60px
+  }
+</style>
