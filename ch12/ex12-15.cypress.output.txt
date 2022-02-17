@@ -1,0 +1,64 @@
+예제 12-15 사이프레스 명령 줄 모드 출력
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:    8.4.1                                                                              │
+  │ Browser:    Electron 91 (headless)                                                             │
+  │ Specs:      1 found (travel-packing.spec.js)                                                   │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  travel-packing.spec.js                                                          (1 of 1)
+
+
+  Travel Packing app
+    ✓ should login (3012ms)
+    ✓ should add categories (2384ms)
+    ✓ should add item (3396ms)
+    ✓ should toggle packed (3953ms)
+    ✓ should delete item (3655ms)
+    ✓ should delete category (4472ms)
+    ✓ should logout (1436ms)
+
+
+  7 passing (26s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        7                                                                                │
+  │ Passing:      7                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     25 seconds                                                                       │
+  │ Spec Ran:     travel-packing.spec.js                                                           │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+    Compression progress:  56%
+  -  Finished processing: /home/fx/work/Svelte and Sapper in Action/ch12/travel-packi   (16 seconds)
+                          ng/cypress/videos/travel-packing.spec.js.mp4                              
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  travel-packing.spec.js                   00:25        7        7        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✔  All specs passed!                        00:25        7        7        -        -        -  

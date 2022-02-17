@@ -1,0 +1,22 @@
+예제 12-12 테스트가 성공했을 때의 제스트 출력
+
+PASS  src/Item.spec.js
+  Item
+    ✓ should render (22ms)
+    ✓ should match snapshot (5ms)
+
+PASS  src/Category.spec.js
+  Category
+    ✓ should match snapshot (48ms)
+    ✓ should render (16ms)
+    ✓ should add an item (14ms)
+    ✓ should delete an item (32ms)
+    ✓ should toggle an item (11ms)
+
+Test Suites: 2 psssed, 2 total
+Tests:       7 passed, 7 total
+Snapshots:   2 passed, 2 total
+Time:        1.928s, estimated 2s
+Ran all test suites matching /src/i.
+
+Watch Usage: Press w to show more.
