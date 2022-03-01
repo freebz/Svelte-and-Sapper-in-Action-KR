@@ -1,0 +1,9 @@
+/* 예제 20-6 src/Dog.css 파일에 정의한 Dog 컴포넌트 CSS */
+
+h1 {
+  margin-bottom: 0;
+}
+
+.breed {
+  color: green;
+}
