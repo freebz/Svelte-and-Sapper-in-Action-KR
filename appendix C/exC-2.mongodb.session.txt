@@ -1,0 +1,20 @@
+show dbs
+use animals
+db.createCollection('dogs')
+show dbs
+db.createCollection('cats')
+db.getCollectionNames();
+db.dogs.insert({breed: 'Whippet', name: 'Dasher'})
+db.dogs.insert({breed: 'TWC', name: 'Maisey'})
+db.dogs.insert({breed: 'NAID', name: 'Ramsay'})
+db.dogs.insert({breed: 'GSP', name: 'Oscar'})
+db.dogs.find()
+db.dogs.find({breed: 'Whippet'})
+db.dogs.deleteMany({breed: 'Whippet'})
+db.dogs.find()
+db.dogs.update({breed: 'GSP'}, {$set: {name: 'Oscar Wilde'}})
+db.dogs.update({_id: ObjectId('some-id')}, {$set: {name: 'Oscar Wilder'}})
+db.dogs.drop()
+db.getCollectionNames()
+db.dropDatabase()
+show dbs

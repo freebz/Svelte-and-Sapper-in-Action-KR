@@ -1,0 +1,12 @@
+{
+  _id: ObjectId("5e4984b33c9533dfdf102ac8"),
+  firstName: "Mark",
+  lastName: "Volkmann",
+  address: {
+    street: "123 Some Street",
+    city: "Somewhere",
+    state: "Missouri",
+    zip: 12345
+  },
+  favoriteColors: ["yellow", "orange"]
+}
