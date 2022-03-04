@@ -1,0 +1,9 @@
+// 예제 E-1 .prettierrc 파일
+
+{
+  "arrowParens": "avoid",
+  "bracketSpacing": false,
+  "singleQuote": true,
+  "svelteSortOrder": "scripts-markup-styles",
+  "trailingComma": "none"
+}
